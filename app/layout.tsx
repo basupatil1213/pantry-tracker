@@ -5,7 +5,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import Provider from "@/components/Provider";
 import Footer from "@/components/Footer/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-white flex flex-col min-h-screen`}>
+      <body className={`bg-white flex flex-col min-h-screen`}>
         <Provider>
           <NavBar className="sticky top-0 z-50" />
           <main className="flex-grow">
