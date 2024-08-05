@@ -22,10 +22,15 @@ const PantryItemSchema = new mongoose.Schema({
         type: String,
         enum: ['Fruit', 'Vegetable', 'Meat', 'Dairy', 'Grain', 'Spice', 'Other'],
         required: true
+    },
+    createdBy: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User',
+        required: true
     }
 },
 {
-    timestamps: true
+    timestamps: true,
 });
 
 // PantryItemSchema.statics.getCategories = function() {

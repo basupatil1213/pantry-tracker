@@ -51,7 +51,7 @@ const SearchItems = ({setItems} : SearchItemsProps) => {
 					placeholder="Search for items (e.g., Milk)"
 					value={search}
 					onChange={(e) => setSearch(e.target.value)}
-					className="w-full p-4 pl-12 text-lg bg-white border border-gray-300 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out"
+					className="w-full p-4 pl-12 text-lg bg-gray-800 border border-gray-700 rounded-full shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out text-white placeholder-gray-400"
 				/>
 				<FaSearch className="absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400 text-xl" />
 			</div>

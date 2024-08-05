@@ -22,7 +22,7 @@ const createPantryItem = async (req: Request) => {
         }
 
         console.log(`Creating new pantry item with ${JSON.stringify(body)}`);
-
+        
         const pantryItem = new PantryItem(body);
 
         const newItem = await pantryItem.save();
